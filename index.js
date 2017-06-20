@@ -30,9 +30,7 @@ module.exports = function (scope, options, nodeList) {
 }
 
 module.exports = function canStacheLoader(source) {
-    const src = JSON.stringify(source);
-
     const intermediateAndImports = getIntermediateAndImports(source);
 
-    return getTemplate(src, intermediateAndImports.imports);
+    return getTemplate(source, intermediateAndImports.imports);
 };
