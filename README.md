@@ -1,70 +1,28 @@
-[![version](https://img.shields.io/npm/v/can-stache-loader.svg)](https://www.npmjs.com/package/can-stache-loader)
-[![dependencies](https://img.shields.io/david/macku/can-stache-loader.svg)](https://david-dm.org/macku/can-stache-loader)
-[![dev dependencies](https://img.shields.io/david/dev/macku/can-stache-loader.svg)](https://david-dm.org/macku/can-stache-loader?type=dev)
+# can-stache-loader
 
-<div align="center">
-  <a href="https://github.com/webpack/webpack">
-    <img width="200" height="200"
-      src="https://webpack.js.org/assets/icon-square-big.svg">
-  </a>
-</div>
-
-# CanJS Stache template loader for webpack
+[![Join our Slack](https://img.shields.io/badge/slack-join%20chat-611f69.svg)](https://www.bitovi.com/community/slack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join our Discourse](https://img.shields.io/discourse/https/forums.bitovi.com/posts.svg)](https://forums.bitovi.com/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/canjs/can-stache-loader/blob/master/LICENSE)
+[![npm version](https://badge.fury.io/js/can-stache-loader.svg)](https://www.npmjs.com/package/can-stache-loader)
+[![Travis build status](https://travis-ci.org/canjs/can-stache-loader.svg?branch=master)](https://travis-ci.org/canjs/can-stache-loader)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-stache-loader?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-stache-loader)
+[![Coverage status](https://coveralls.io/repos/github/canjs/can-stache-loader/badge.svg?branch=master)](https://coveralls.io/github/canjs/can-stache-loader?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-stache-loader.svg)](https://greenkeeper.io/)
 
 Compiles [CanJS Stache](https://github.com/canjs/can-stache) templates with [can-view-parser](https://github.com/canjs/can-view-parser) and allows to load them with [webpack](https://webpack.github.io/)
 
+## Documentation
 
-## How to install
+Read the [can-stache-loader API docs on CanJS.com](https://canjs.com/doc/can-stache-loader.html).
 
-### NPM and Yarn
+## Changelog
 
-You can install the library using [**NPM**](https://www.npmjs.com):
+See the [latest releases on GitHub](https://github.com/canjs/can-stache-loader/releases).
 
-```bash
-npm install can-stache-loader --save-dev
-```
+## Contributing
 
-or by [**Yarn**](https://yarnpkg.com/):
-
-```bash
-yarn add can-stache-loader
-```
-
-## How to use it
-
-
-### Configure webpack 2+
-
-**webpack.config.js**
-
-```js
-{
-  module: {
-    rules: [
-      {
-        test: /\.stache$/,
-        use: {
-          loader: 'can-stache-loader'
-        }
-      }
-    ]
-  }
-}
-```
-
-### Import stache templates in your [CanJS](https://canjs.com/) project
-
-```js
-import tpl from './template.stache';
-
-const html = tpl({
- foo: 'bar'
-});
-```
-
-## CanJS Compatibility
-
-This library works fine with [CanJS](https://canjs.com/) version **4.0.0+** and [webpack](https://webpack.github.io/) **2.0.0+**.
+The [contribution guide](https://github.com/canjs/can-stache-loader/blob/master/CONTRIBUTING.md) has information on getting help, reporting bugs, developing locally, and more.
 
 ## License
-[MIT](https://opensource.org/licenses/MIT)
+
+[MIT](https://github.com/canjs/can-stache-loader/blob/master/LICENSE)
